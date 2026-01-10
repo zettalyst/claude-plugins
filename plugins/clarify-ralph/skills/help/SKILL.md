@@ -1,6 +1,6 @@
 ---
-description: "Explain Clarify Ralph technique and available commands"
-allowed-tools: []
+name: help
+description: Explain Clarify Ralph technique and available commands
 ---
 
 # Clarify Ralph - Help
@@ -13,7 +13,7 @@ It combines two techniques:
 - **Clarify skill**: AskUserQuestion-based requirement refinement
 - **Ralph Wiggum technique**: Stop hook for automatic iteration loops
 
-## Commands
+## Skills
 
 ### /clarify-ralph
 
