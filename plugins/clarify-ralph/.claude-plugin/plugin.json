@@ -1,0 +1,9 @@
+{
+  "name": "clarify-ralph",
+  "version": "1.0.0",
+  "description": "Iterative requirement clarification using AskUserQuestion in a Ralph Wiggum-style loop. Transforms vague requirements into precise specifications through structured questioning until all ambiguities are resolved.",
+  "author": {
+    "name": "yuhogyun"
+  },
+  "keywords": ["clarify", "requirements", "ralph", "loop", "iteration"]
+}

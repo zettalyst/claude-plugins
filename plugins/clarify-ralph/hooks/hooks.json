@@ -1,0 +1,15 @@
+{
+  "description": "Clarify Ralph stop hook for iterative requirement clarification",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/stop-hook.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
