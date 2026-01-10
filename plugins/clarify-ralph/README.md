@@ -6,20 +6,26 @@ Transform vague requirements into precise, actionable specifications through str
 
 ## Installation
 
+Run these commands in your terminal:
+
 ```bash
 # 1. Add marketplace (first time only)
-/plugin marketplace add zettalyst/claude-plugins
+claude plugin marketplace add zettalyst/claude-plugins
 
 # 2. Update marketplace
-/plugin marketplace update
+claude plugin marketplace update
 
 # 3. Install plugin
-/plugin install clarify-ralph@zettalyst-plugins
+claude plugin install clarify-ralph@zettalyst-plugins
+
+# 4. Restart Claude Code to load the plugin
 ```
 
 ## Quick Start
 
-```bash
+Inside Claude Code, run:
+
+```
 /clarify-ralph "Add a login feature" --max-iterations 10
 ```
 

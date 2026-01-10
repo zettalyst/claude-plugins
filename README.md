@@ -4,23 +4,27 @@ A marketplace of custom plugins for Claude Code.
 
 ## Installation
 
-### 1. Add Marketplace
+### 1. Add Marketplace (Terminal)
 
 ```bash
-/plugin marketplace add zettalyst/claude-plugins
+claude plugin marketplace add zettalyst/claude-plugins
 ```
 
-### 2. Update Marketplace
+### 2. Update Marketplace (Terminal)
 
 ```bash
-/plugin marketplace update
+claude plugin marketplace update
 ```
 
-### 3. Install Plugin
+### 3. Install Plugin (Terminal)
 
 ```bash
-/plugin install clarify-ralph@zettalyst-plugins
+claude plugin install clarify-ralph@zettalyst-plugins
 ```
+
+### 4. Restart Claude Code
+
+Restart Claude Code to load the new plugin.
 
 ## Available Plugins
 
@@ -28,8 +32,8 @@ A marketplace of custom plugins for Claude Code.
 
 Iterative requirement clarification using AskUserQuestion in a Ralph Wiggum-style loop.
 
-**Usage:**
-```bash
+**Usage (inside Claude Code):**
+```
 /clarify-ralph "Add a login feature" --max-iterations 10
 ```
 
@@ -43,12 +47,22 @@ Transform vague requirements into precise specifications through structured ques
 
 ## Quick Reference
 
+### Terminal Commands (CLI)
+
 | Command | Description |
 |---------|-------------|
-| `/plugin marketplace add zettalyst/claude-plugins` | Add this marketplace |
-| `/plugin marketplace update` | Update marketplace cache |
-| `/plugin install clarify-ralph@zettalyst-plugins` | Install clarify-ralph |
-| `/plugin uninstall clarify-ralph` | Uninstall plugin |
+| `claude plugin marketplace add zettalyst/claude-plugins` | Add this marketplace |
+| `claude plugin marketplace update` | Update marketplace cache |
+| `claude plugin install clarify-ralph@zettalyst-plugins` | Install clarify-ralph |
+| `claude plugin uninstall clarify-ralph` | Uninstall plugin |
+
+### Slash Commands (inside Claude Code)
+
+| Command | Description |
+|---------|-------------|
+| `/clarify-ralph "<requirement>"` | Start clarification loop |
+| `/cancel-clarify` | Cancel active loop |
+| `/help` | Show plugin help |
 
 ## Marketplace Structure
 
