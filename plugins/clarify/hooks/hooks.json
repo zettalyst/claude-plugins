@@ -1,5 +1,5 @@
 {
-  "description": "Clarify Ralph stop hook for iterative requirement clarification",
+  "description": "Clarify stop hook for iterative requirement clarification",
   "hooks": {
     "Stop": [
       {

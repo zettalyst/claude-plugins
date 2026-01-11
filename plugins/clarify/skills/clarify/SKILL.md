@@ -1,23 +1,21 @@
 ---
-name: clarify-ralph
+name: clarify
 description: Start iterative requirement clarification loop. Use this skill when the user has a vague requirement and wants to clarify it through structured questioning. Transforms unclear requirements into precise, actionable specifications.
 ---
 
-# Clarify Ralph Skill
+# Clarify Skill
 
-This skill guides you through iterative requirement clarification. When invoked, you will transform vague requirements into precise specifications through structured questioning.
+Transform vague requirements into precise specifications through structured questioning.
 
 ## Invocation
 
-The user invokes this skill with a requirement to clarify. Parse the input to extract:
+Parse the input to extract:
 - **REQUIREMENT**: The vague requirement text (required)
-- **--max-iterations N**: Maximum question rounds (default: 10)
+- **--max-iterations N**: Maximum question rounds (default: 3)
 
 ## Initialization
 
-When this skill is invoked, first create the state file:
-
-1. Create `.claude/clarify-ralph.local.md` with this content:
+1. Create `.claude/clarify.local.md`:
 ```
 ---
 active: true
@@ -36,17 +34,17 @@ started_at: "[ISO timestamp]"
 
 2. Confirm activation:
 ```
-Clarify Ralph loop activated!
+Clarify loop activated!
 
 Original Requirement: "[REQUIREMENT]"
 Max Questions: [MAX_ITERATIONS]
 
-To cancel: /cancel-clarify
+To cancel: /cancel
 ```
 
 ## Clarification Methodology
 
-You are now in a **Clarify Ralph Loop**. Transform the vague requirement into a precise, actionable specification through iterative questioning.
+You are now in a **Clarify Loop**. Transform the vague requirement into a precise, actionable specification through iterative questioning.
 
 ### Your Task
 
@@ -81,7 +79,7 @@ You are now in a **Clarify Ralph Loop**. Transform the vague requirement into a 
 
 When the user selects "Clarification complete" OR you reach max iterations:
 
-1. Output the final clarified requirement in this format:
+1. Output the final clarified requirement:
 
 ```markdown
 ## Requirement Clarification Summary
