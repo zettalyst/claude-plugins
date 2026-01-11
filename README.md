@@ -6,7 +6,7 @@ Claude Code용 커스텀 플러그인 마켓플레이스입니다.
 
 ```bash
 # 1. 마켓플레이스 추가
-claude plugin marketplace add october/claude-plugins
+claude plugin marketplace add october-academy/claude-plugins
 
 # 2. 마켓플레이스 업데이트
 claude plugin marketplace update
@@ -89,17 +89,96 @@ claude plugin install wrap@october-plugins
 
 ---
 
+### [frontend-design](./plugins/frontend-design)
+
+고품질의 독창적인 프론트엔드 인터페이스를 생성합니다.
+
+```bash
+claude plugin install frontend-design@october-plugins
+```
+
+**특징:**
+- 독특한 타이포그래피와 색상 팔레트
+- 하이 임팩트 애니메이션
+- 컨텍스트 인식 구현
+- 프로덕션 레디 코드
+
+**자동 적용:** Claude가 프론트엔드 작업 시 자동으로 이 스킬을 사용합니다.
+
+---
+
+### [code-simplifier](./plugins/code-simplifier)
+
+코드를 명확성, 일관성, 유지보수성을 위해 단순화하고 정제합니다.
+
+```bash
+claude plugin install code-simplifier@october-plugins
+```
+
+**특징:**
+- 기능 보존하면서 코드 개선
+- 프로젝트 표준 적용
+- 최근 수정된 코드에 집중
+- Opus 모델 사용
+
+**원칙:**
+- 기능 변경 없음 - 구현 방식만 개선
+- 중첩 삼항 연산자 피하기
+- 명확성 > 간결성
+
+---
+
+### [typescript-lsp](./plugins/typescript-lsp)
+
+TypeScript/JavaScript 언어 서버 설정 가이드입니다.
+
+```bash
+claude plugin install typescript-lsp@october-plugins
+```
+
+**기능:**
+- Go-to-definition
+- Find references
+- Error checking
+
+**설치:**
+```bash
+npm install -g typescript-language-server typescript
+```
+
+---
+
+### [linear](./plugins/linear)
+
+Linear 이슈 트래킹 통합입니다. MCP 서버를 통해 Linear와 연동합니다.
+
+```bash
+claude plugin install linear@october-plugins
+```
+
+**기능:**
+- 이슈 생성 및 관리
+- 프로젝트 관리
+- 상태 업데이트
+- 워크스페이스 검색
+
+---
+
 ## 빠른 참조
 
 ### 터미널 명령어 (CLI)
 
 | 명령어 | 설명 |
 |--------|------|
-| `claude plugin marketplace add october/claude-plugins` | 마켓플레이스 추가 |
+| `claude plugin marketplace add october-academy/claude-plugins` | 마켓플레이스 추가 |
 | `claude plugin marketplace update` | 마켓플레이스 업데이트 |
 | `claude plugin install clarify@october-plugins` | clarify 설치 |
 | `claude plugin install feature-dev@october-plugins` | feature-dev 설치 |
 | `claude plugin install wrap@october-plugins` | wrap 설치 |
+| `claude plugin install frontend-design@october-plugins` | frontend-design 설치 |
+| `claude plugin install code-simplifier@october-plugins` | code-simplifier 설치 |
+| `claude plugin install typescript-lsp@october-plugins` | typescript-lsp 설치 |
+| `claude plugin install linear@october-plugins` | linear 설치 |
 | `claude plugin uninstall <name>` | 플러그인 제거 |
 
 ### 슬래시 명령어 (Claude Code 내부)
@@ -119,7 +198,11 @@ claude-plugins/
 │   └── marketplace.json
 ├── plugins/
 │   ├── clarify/
+│   ├── code-simplifier/
 │   ├── feature-dev/
+│   ├── frontend-design/
+│   ├── linear/
+│   ├── typescript-lsp/
 │   └── wrap/
 └── README.md
 ```
